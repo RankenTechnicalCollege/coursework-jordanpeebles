@@ -1,1 +1,4 @@
 This is just a place holder. You can ignore this file. 
+        "images/applebees-logo.jpg" alt="Applebee's logo">
+    "images/applebees-logo.jpg" alt="Applebee's logo">
+          images/applebees-food.jpg" alt="Delicious Applebee's food">

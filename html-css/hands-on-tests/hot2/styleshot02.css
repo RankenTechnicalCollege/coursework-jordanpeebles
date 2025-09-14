@@ -1,0 +1,80 @@
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 24px 0;
+  text-align: center;
+}
+p span {
+  color: #d35400;
+  font-weight: bold;
+}
+.menu-item {
+  border: 2px solid #2c3e50;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background: #f8f8f8;
+}
+#hero {
+  background-image: url('images/applebees-food.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+body {
+  background: linear-gradient(to right, red, yellow);
+  min-height: 100vh;
+  margin: 0;
+}
+header {
+  background: linear-gradient(90deg, #0066ff, #00cc99);
+  color: #fff;
+  padding: 1.2em;
+  text-align: center;
+}
+main {
+  padding: 1.2em;
+}
+footer {
+  padding: 1.2em;
+}
+.wrapper {
+  width: 80%;
+  margin: 40px auto;
+  padding: 24px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+.wrapper div p {
+  font-weight: bold;
+  color: #ffffff;
+}
+/* 2d. Descendant selector */
+nav > ul > li > a {
+  text-decoration: underline;
+  color: #333333;
+  border-bottom: 2px solid #0066ff;
+}
+h1, h2, p {
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+p {
+  font: italic bold 32px/1.5 Arial, sans-serif; /* Absolute font size set to 32px */
+  width: 350px;
+  height: 80px;
+  background-color: #fff;
+  overflow: auto;
+}
+a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+input:focus {
+  border-color: #0000ff;
+  outline: none;
+}

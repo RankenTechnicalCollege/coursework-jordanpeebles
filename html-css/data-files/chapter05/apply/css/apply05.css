@@ -6,14 +6,14 @@ body, header, nav, main, footer, h1, div, img, ul {
     padding: 0;
     border: 0;
 }
-<link rel="stylesheet" href="apply05.css">
+
 /* Style rule for body and images */
 body {
 	background-color: #e4f1f6;
 }
 
 /* Style rule for header */
-header {
+header {html-css/data-files/chapter05/apply/index.html
 	font-family: Verdana, Arial, sans-serif;
 	text-align: center;
     padding: 3%;

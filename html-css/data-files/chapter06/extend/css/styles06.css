@@ -39,7 +39,9 @@ main {
 }
 
 /* Gradient style rules */
-
+.gradient1 {
+    background: linear-gradient(to right, #67afcb, #1a3e4c25);
+}
 
 /* Style rule for footer */
 footer {

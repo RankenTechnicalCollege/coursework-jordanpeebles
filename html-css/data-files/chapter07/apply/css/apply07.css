@@ -63,5 +63,9 @@ footer {
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
 
+    article:hover {
+        background-color: #ffe5dc;
+        color: #a22c02;
+    }
     
 }

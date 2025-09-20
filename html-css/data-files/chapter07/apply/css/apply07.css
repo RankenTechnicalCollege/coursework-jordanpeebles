@@ -73,7 +73,10 @@ footer {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 650px), print {
-    
+    .grid-contanier{
+		display: grid
+		grid-template-columns: 1fr 1fr;
+		gap: 20px
     
 }
 

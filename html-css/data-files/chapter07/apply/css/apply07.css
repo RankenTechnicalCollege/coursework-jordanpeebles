@@ -17,24 +17,21 @@ body {
 }
 
 /* Style rules for mobile viewport */
-section{
-	background color: #183440
-	color: #fff
-	top margin: 4%
-	padding: 2%
-	
-	
-	/* Style rule */
-	top margin: 1%
-	padding: 2%
+
+section {
+    background-color: #183440;
+    color: #fff;
+    margin-top: 4%;
+    padding: 2%;
+}
 
 /* Style rule for header */
 header {
-	font-family: Verdana, Arial, sans-serif;
-	margin-top: 0.2em;
-	background-color: #183440;
-	color: #fff;
-	padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+    margin-top: 0.2em;
+    background-color: #183440;
+    color: #fff;
+    padding: 2%;
 }
 
 /* Style rules for nav area */
@@ -53,42 +50,43 @@ nav li a {
 	text-decoration: none;
 }
 
+
 /* Style rules for main content  */
 main {
-	padding: 1em;
-	background-color: #fff;
+    padding: 1em;
+    background-color: #fff;
 }
-	/* Article style rules */
-	article {
-		background color: rgba(24, 52, 64, 0.3)
-		padding: 2%
-		top margin: 1%
-		color: #183440
-		box shadow: 4px 4px 10 px #183440
+
+/* Article style rules */
+article {
+    background-color: rgba(24, 52, 64, 0.3);
+    padding: 2%;
+    margin-top: 1%;
+    color: #183440;
+    box-shadow: 4px 4px 10px #183440;
+}
 
 footer {
-	font-size: .70em;
-	text-align: center;
+    font-size: .70em;
+    text-align: center;
 }
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 650px), print {
-    aside{
-		display: grid
+	aside {
+		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 20px
-		<aside class="two-columns">
-		<
-    
+		gap: 20px;
+	}
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
-	.grid-container{
+	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		aside{
-			grid-column: span 4; 
-			
-    
+	}
+	aside {
+		grid-column: span 4;
+	}
 }

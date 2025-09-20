@@ -73,15 +73,22 @@ footer {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 650px), print {
-    .grid-contanier{
+    aside{
 		display: grid
 		grid-template-columns: 1fr 1fr;
 		gap: 20px
+		<aside class="two-columns">
+		<
     
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
-
+	.grid-container{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		aside{
+			grid-column: span 4; 
+			
     
 }

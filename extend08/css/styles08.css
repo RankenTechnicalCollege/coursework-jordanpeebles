@@ -1,0 +1,38 @@
+/* Jordan Peebles, September 21, 2025 */
+
+
+/* Set the background color and font for the page */
+body {
+	background-color: #ffe5dc;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the table border, shadow, and layout */
+table {
+	border: 2px solid #fd4d0c;
+	box-shadow: 0 4px 12px #792101;
+	border-collapse: collapse;
+	width: 80%;
+	margin: 2em auto;
+	background: white;
+}
+
+/* Style table header and data cell borders, padding, and alignment */
+th, td {
+	border: 1px solid #a22c02;
+	padding: 0.75em 1em;
+	text-align: center;
+}
+
+/* Set background color for odd table rows (excluding header) */
+tr:nth-child(odd):not(:first-child) {
+	background-color: #fe9772;
+}
+
+/* Style the table caption */
+caption {
+	caption-side: top;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}

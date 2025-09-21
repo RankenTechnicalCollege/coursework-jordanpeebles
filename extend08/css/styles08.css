@@ -1,3 +1,42 @@
+/* Tablet viewport styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+	form {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 20px;
+	}
+
+	.btn {
+		grid-column: 1 / span 2;
+		padding: 3%;
+	}
+}
+/* Mobile viewport styles for forms */
+fieldset,
+input {
+	margin-bottom: 2%;
+}
+
+fieldset legend {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.btn {
+	border: none;
+	margin: 0 auto;
+	display: block;
+	padding: 5%;
+	background-color: #003399;
+	font-size: 1.25em;
+	border-radius: 10px;
+	color: #fff;
+}
 /* Jordan Peebles, September 21, 2025 */
 
 

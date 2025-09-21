@@ -2,12 +2,29 @@
 .music-title {
     font-family: 'Roboto', Arial, sans-serif;
 }
+
 figcaption {
     font-size: 1em;
 }
 @media (min-width: 901px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* Desktop Viewport: Style rules for table */
+    table {
+        width: 70%;
+    }
+
+    /* Desktop Viewport: Style rules for form elements */
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 2;
     }
 }
 aside {
@@ -19,8 +36,29 @@ aside {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+
+    /* Tablet Viewport: Style rule for form element */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 600px) {
+    th, td {
+        border: 1px solid #373684;
+        padding: 2%;
+    }
+
+    th {
+        background-color: #373684;
+        color: #fff;
+        font-size: 1.5em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #b7b7e1;
+    }
+
     figure {
         position: absolute;
         bottom: 0;
@@ -42,39 +80,83 @@ aside {
         color: #373684;
         text-shadow: 3px 3px 10px #8280cb;
     }
+
+    /* Map styles */
+    .map {
+        width: 95%;
+        height: 50%;
+    }
+
+    /* Style rules for table */
+    table {
+        border: 1px solid #373684;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    /* Email link styles */
+    #contact.email-link,
+    #rental h2 {
+        color: #373684;
+        text-decoration: underline;
+        font-weight: bold;
+    }
 }
-/* Map styles */
-.map {
-    width: 95%;
-    height: 50%;
-}
-/* Email link styles */
-#contact.email-link {
-    color: #373684;
-    text-decoration: underline;
-    font-weight: bold;
-}
+
 .tel-link {
     background-color: #373684;
-    padding : 2%;
-    margin:0 auto;
+    padding: 2%;
+    margin: 0 auto;
     width: 80%;
     text-align: center;
     border-radius: 5px;
-      
 }
+
 .tel-link a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
     display: block;
-  
-}   /* Info list styles */
+}
+
+/* Info list styles */
 #info ul {
     margin-left: 10%;
 }
+
 .round {
     border-radius: 8px;
+}
+
+/* Style rules for form elements */
+fieldset,
+input {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
 }
 
 /* Style rules for boxing sizes applies to all elements*/

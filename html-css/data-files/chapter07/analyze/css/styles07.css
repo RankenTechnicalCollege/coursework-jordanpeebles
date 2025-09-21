@@ -1,11 +1,11 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Jordan Peebles 
+Date: 9/20/2025
+File Name: Styles css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, h3, div {
+body, header, nav, main, footer, h1, h3, div, section, article, aside, figure, figcaption, mark, summary, details, time {
     margin: 0;
     padding: 0;
     border: 0;
@@ -57,6 +57,8 @@ main h1 {
 section {
     color: #fff;
     padding: 3%;
+    background-color: #9d4502;
+    margin: 1% 0;
 }
 
 article {
@@ -73,6 +75,8 @@ aside {
     font-style: italic;
     text-align: center;
     border-radius: 15px;
+    text-shadow: 4px 4px 8px #fc7307;
+    box-shadow: 4px 4px 10px #183440;
 }
 
 footer {
@@ -82,6 +86,12 @@ footer {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 700px), print {
-    
-    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    aside {
+        grid-column: 1 / span 3;
+    }
 }

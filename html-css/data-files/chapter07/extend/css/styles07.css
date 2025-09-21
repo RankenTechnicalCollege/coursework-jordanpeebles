@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Jordan Peebles
+Date:  9/20/2025
+File Name:  Extend Styles. Css
 */
 
 /* CSS Reset */
@@ -29,6 +29,18 @@ header {
 /* Style rules for main content  */
 main {
 	background-color: #fff;
+	column-count: 3;
+	column-gap: 2em;
+	padding: 2em 1em;
+}
+
+main section {
+	break-inside: avoid;
+	margin-bottom: 1.5em;
+	background: #f4f4f4;
+	border-radius: 6px;
+	padding: 1em;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 aside {
@@ -39,3 +51,4 @@ footer {
 	font-size: .70em;
 	text-align: center;
 }
+

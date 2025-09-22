@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Jordan Peebles | music-survey.html | 9/21/2025 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Survey</title>
+  <link rel="stylesheet" href="music-styles.css">
+</head>
+<body>
+  <header>
+    <h1>Music Survey</h1>
+  </header>
+  <main>
+    <form class="music-survey-form">
+      <fieldset>
+  <legend>Personal Information</legend>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required>
+      </fieldset>
+      <fieldset>
+        <legend>Music Preferences</legend>
+        <fieldset class="radio-group">
+          <legend>How often do you listen to music?</legend>
+          <input type="radio" id="daily" name="frequency" value="daily" required>
+          <label for="daily" class="inline">Daily</label>
+          <input type="radio" id="weekly" name="frequency" value="weekly">
+          <label for="weekly" class="inline">Weekly</label>
+          <input type="radio" id="rarely" name="frequency" value="rarely">
+          <label for="rarely" class="inline">Rarely</label>
+        </fieldset>
+        <label for="genre">Favorite Genre:</label>
+        <select id="genre" name="genre" size="3" required>
+          <option value="rock">Rock</option>
+          <option value="pop">Pop</option>
+          <option value="hiphop">Hip-Hop</option>
+          <option value="jazz">Jazz</option>
+          <option value="classical">Classical</option>
+        </select>
+        <fieldset class="checkbox-group">
+          <legend>How do you listen to music?</legend>
+          <input type="checkbox" id="streaming" name="listen[]" value="streaming">
+          <label for="streaming" class="inline">Streaming</label>
+          <input type="checkbox" id="radio" name="listen[]" value="radio">
+          <label for="radio" class="inline">Radio</label>
+          <input type="checkbox" id="vinyl" name="listen[]" value="vinyl">
+          <label for="vinyl" class="inline">Vinyl</label>
+        </fieldset>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" cols="60" rows="3"></textarea>
+        <div class="button-group">
+          <button class="button-submit" type="submit">Submit</button>
+          <button class="button-reset" type="reset">Reset</button>
+        </div>
+      </fieldset>
+  </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Jordan Peebles. All rights reserved.</p>
+    <div class="credit">
+      <span>Created by Jordan Peebles</span> |
+      <a href="mailto:jordanpeebles47@gmail.com">jordanpeebles47@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>

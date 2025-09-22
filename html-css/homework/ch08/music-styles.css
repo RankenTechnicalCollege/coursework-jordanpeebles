@@ -1,0 +1,105 @@
+/* Credit section at bottom of page */
+.credit {
+  margin-top: 1.5em;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+}
+.credit a {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 0.5em;
+}
+.credit a:hover {
+  color: #b3c6e7;
+}
+/* Jordan Peebles | music-styles.css | 9/21/2025 */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8ff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: #4b6cb7;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+}
+
+.music-survey-form fieldset {
+  border: 1px solid #4b6cb7;
+  border-radius: 0.7em;
+  margin-bottom: 1.5em;
+  padding: 1.2em;
+}
+
+.music-survey-form legend {
+  font-weight: bold;
+  color: #4b6cb7;
+  font-size: 1.1em;
+  margin-bottom: 0.7em;
+}
+
+.music-survey-form label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.music-survey-form label.inline {
+  display: inline;
+  font-weight: normal;
+  margin-right: 1em;
+}
+
+.music-survey-form input,
+.music-survey-form select,
+.music-survey-form textarea {
+  width: 100%;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #b3c6e7;
+  border-radius: 0.4em;
+  font-size: 1em;
+  background: #f8f8ff;
+  box-sizing: border-box;
+}
+
+.music-survey-form button[type="submit"] {
+  background: #4b6cb7;
+  color: #fff;
+  border: none;
+  border-radius: 0.4em;
+  padding: 0.75em 1.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5em;
+  transition: background 0.2s;
+}
+.music-survey-form button[type="submit"]:hover {
+  background: #222;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
+  .music-survey-form fieldset {
+    padding: 0.7em;
+  }
+}

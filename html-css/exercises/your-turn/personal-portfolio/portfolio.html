@@ -37,21 +37,63 @@
     </section>
     <section id="skills">
       <h2>Skills</h2>
-      <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-      </ul>
+      <table>
+        <caption>Technological Proficiencies</caption>
+        <thead>
+          <tr>
+            <th>Technology</th>
+            <th>Proficiency Level</th>
+            <th>Experience (Years)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>Advanced</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td>Intermediate</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Intermediate</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Beginner</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="contact">
       <h2>Contact</h2>
       <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="reason">Reason for Contact:</label>
+        <select id="reason" name="reason" required>
+          <option value="">--Please choose an option--</option>
+          <option value="feedback">Feedback</option>
+          <option value="question">Question</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="other">Other</option>
+        </select>
+
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
+
         <button type="submit">Send</button>
       </form>
     </section>

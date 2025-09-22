@@ -1,0 +1,39 @@
+/* Jordan Peebles | table-styles2.css | 9/21/2025 */
+
+table {
+  width: 80%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+caption {
+  caption-side: top;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+thead th {
+  background: #2d8f85;
+  color: #fff;
+  text-align: left;
+  padding: 0.75em 1.2em;
+  border: 2px solid #2d8f85;
+}
+
+tbody td {
+  background: #f0f7f4;
+  text-align: left;
+  padding: 0.7em 1em;
+  border: 1px solid #2d8f85;
+}
+
+tbody tr:nth-child(even) td {
+  background: #cbe7e1;
+}
+
+th, td {
+  min-width: 120px;
+}

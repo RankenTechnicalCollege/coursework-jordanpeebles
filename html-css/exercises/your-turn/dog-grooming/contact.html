@@ -1,0 +1,79 @@
+<!-- Contact Information and Location for Paws & Relax Dog Grooming -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information - Paws & Relax Dog Grooming</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Paws &amp; Relax Dog Grooming</h1>
+        <h2>Your Subtitle Here</h2>
+        <button class="nav-toggle" aria-label="Open navigation menu" type="button">&#9776;</button>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-grid">
+        <div id="contact-info">
+            <h2>Contact Information</h2>
+            <p>We'd love to hear from you! Reach out to book an appointment or ask any questions.</p>
+            
+            <ul>
+                <li><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></li>
+                <li><strong>Email:</strong> <a href="mailto:info@pawsandrelax.com">info@pawsandrelax.com</a></li>
+                <li><strong>Address:</strong> 123 Dogwood Lane, Petville, PA 12345</li>
+            </ul>
+
+            <h3>Business Hours</h3>
+            <ol>
+                <li>Monday - Friday: 8:00 AM – 6:00 PM</li>
+                <li>Saturday: 9:00 AM – 4:00 PM</li>
+                <li>Sunday: Closed</li>
+            </ol>
+
+            <h3>Our Location</h3>
+            <iframe 
+                src="https://www.google.com/maps?q=123+Dogwood+Lane,+Petville,+PA+12345&output=embed" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Map of Paws & Relax Dog Grooming location"></iframe>
+
+            <h3>Send Us a Message</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Paws &amp; Relax Dog Grooming. All rights reserved.<br>
+        Contact us: <a href="mailto:info@pawsandrelax.com">info@pawsandrelax.com</a></p>
+    </footer>
+    <script>
+        // Hamburger menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navList = document.querySelector('.nav-list');
+        navToggle.addEventListener('click', () => {
+            navList.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

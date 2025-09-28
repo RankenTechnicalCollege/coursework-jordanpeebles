@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Grooming Services - Paws & Relax Dog Grooming</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Paws &amp; Relax Dog Grooming</h1>
+        <h2>Your Subtitle Here</h2>
+        <button class="nav-toggle" aria-label="Open navigation menu" type="button">&#9776;</button>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-grid">
+        <div id="services-content">
+            <h2>Our Dog Grooming Services</h2>
+            <p>We offer a variety of grooming services to keep your dog looking and feeling their best. Our experienced groomers provide gentle, professional care for every pup.</p>
+            
+            <figure>
+                <img src="images/bath-brush.jpg" alt="Dog getting a bath and brush" width="400" height="267">
+                <figcaption>Bath &amp; Brush service in action</figcaption>
+            </figure>
+            <figure>
+                <img src="images/groomer-team.jpg" alt="Our professional grooming team" width="400" height="267">
+                <figcaption>Meet our friendly grooming team</figcaption>
+            </figure>
+
+            <h3>Popular Services</h3>
+            <ul>
+                <li>Bath &amp; Brush</li>
+                <li>Haircut &amp; Styling</li>
+                <li>Nail Trimming</li>
+                <li>Ear Cleaning</li>
+                <li>De-shedding Treatment</li>
+            </ul>
+
+            <h3>Why Choose Us?</h3>
+            <ol>
+                <li>Certified and experienced groomers</li>
+                <li>Safe and comfortable environment</li>
+                <li>Personalized care for every dog</li>
+            </ol>
+
+            <h3>Service Details</h3>
+            <dl>
+                <dt>Bath &amp; Brush</dt>
+                <dd>Includes shampoo, blow dry, and brush out for a clean, shiny coat.</dd>
+                <dt>Nail Trimming</dt>
+                <dd>Gentle nail clipping to keep your dog's paws healthy.</dd>
+                <dt>De-shedding Treatment</dt>
+                <dd>Reduces shedding and keeps your home cleaner.</dd>
+            </dl>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Paws &amp; Relax Dog Grooming. All rights reserved.<br>
+        Contact us: <a href="mailto:info@pawsandrelax.com">info@pawsandrelax.com</a></p>
+    </footer>
+    <script>
+        // Hamburger menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navList = document.querySelector('.nav-list');
+        navToggle.addEventListener('click', () => {
+            navList.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

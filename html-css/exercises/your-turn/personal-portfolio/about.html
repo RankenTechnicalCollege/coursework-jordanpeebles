@@ -11,7 +11,7 @@
     <img src="images/jordan.jpg" alt="Photo of Jordan playing football" height="300" width="500">
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
+      <a href="about.html" aria-current="page">About Me</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -20,6 +20,21 @@
     <div id="about-content">
       <h1>About Me</h1>
       <p>Hello! My name is Jordan Peebles. I am a student at Ranken Technical College, passionate about technology, sports, and continuous learning.</p>
+      <!-- Audio introduction -->
+      <h2>Listen to My Introduction</h2>
+      <audio controls>
+        <source src="media/introduction.mp3" type="audio/mpeg">
+        <source src="media/introduction.ogg" type="audio/ogg">
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+      <!-- Example video element with fallback text -->
+      <h2>Watch My Introduction Video</h2>
+      <video width="400" controls>
+        <source src="media/introduction.mp4" type="video/mp4">
+        <source src="media/introduction.webm" type="video/webm">
+        Your browser does not support the <code>video</code> tag.
+        <a href="media/introduction.mp4">Download the video here.</a>
+      </video>
       <h2>My Interests</h2>
       <ul>
         <li>Web Development</li>

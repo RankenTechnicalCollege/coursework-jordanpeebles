@@ -1,7 +1,7 @@
 /*
-    Student Name
-	File Name: 
-	Current Date: 
+    Jordan Peebles
+    File Name: apply10.css
+    Current Date: September 29, 2025
 */
 
 /* CSS reset */
@@ -13,27 +13,25 @@ body, header, main, section, footer, h1, h2 {
 
 /* Style rule for body */
 body {
-	background-color: #f0d8d1;
+    background-color: #f0d8d1;
 }
-
 
 /* Style rules for header */
 header {
-	padding: 3%;
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: bold;
+    padding: 3%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* Style rules for main content area  */
 main {
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1em;
-	margin: 0 2%;
-	padding: 1em;
-	background-color: #fff;
-	border: 5px double #33091b; 
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin: 0 2%;
     padding: 2%;
+    background-color: #fff;
+    border: 5px double #33091b; 
 }
 
 h2 {
@@ -54,11 +52,34 @@ button {
     height: 200px;
     background-color: #33091b;
     margin-left: 6%;
+
+    -webkit-animation-name: color;
+    animation-name: color;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.square:hover {
+    -webkit-transform: translate(80px);
+    transform: translate(80px);
+}
+
+/* Animation */
+@-webkit-keyframes color {
+    from { background-color: #fbdae9; }
+    to { background-color: #660b32; }
+}
+
+@keyframes color {
+    from { background-color: #fbdae9; }
+    to { background-color: #660b32; }
 }
 
 /* Style rules for the footer */
 footer {
-	font-size: .90em;
-	text-align: center;
-	margin-top: 2em;
+    font-size: .90em;
+    text-align: center;
+    margin-top: 2em;
 }

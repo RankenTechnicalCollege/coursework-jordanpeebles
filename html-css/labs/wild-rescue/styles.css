@@ -116,7 +116,78 @@ aside {
         display: none;
     }
 }
-/* Mobile styles */
+/* Mobile Styles */
+nav {
+    /* ...existing nav styles... */
+}
 
-/* Mobile styles */
+/* Remove the padding declaration from nav li a in the mobile section.
+   Move the remaining declarations to the tablet media query.
+   If nav li a is now empty in the mobile section, delete the rule entirely. */
+
+/* Tablet Styles */
+@media screen and (min-width: 600px) {
+    /* Tablet nav area style rules */
+
+    .mobile,
+    .mobile-nav {
+        display: none;
+    }
+
+    nav ul {
+        /* ...existing nav ul styles... */
+    }
+
+    nav li {
+        font-family: /* your font-family value here */;
+        font-weight: /* your font-weight value here */;
+    }
+
+    nav li a {
+        /* Paste the remaining declarations from the original nav li a rule here (except padding) */
+        /* Example: */
+        /* color: #fff; */
+        /* text-decoration: none; */
+        /* ...etc... */
+    }
+}
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+    <div id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="partnership.html">Partnership</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <a class="nav-icon" onclick="hamburger()">
+        <div id="icon">&#9776;</div>
+    </a>
+</nav>
+<nav class="tab-desk">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="partnership.html">Partnership</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+/* Add these after the .tel-link a style rule */
+#questions p {
+    cursor: pointer;
+}
+
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#answer h2 {
+    display: none;
+}
 

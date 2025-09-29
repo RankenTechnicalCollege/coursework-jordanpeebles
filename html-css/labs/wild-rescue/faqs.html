@@ -1,12 +1,30 @@
 <!DOCTYPE html>
+<!-- 
+    File Name: faqs.html
+    Date: September 29, 2025
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FAQs - Wild Rescues</title>
+    <title>Wild Rescues: FAQs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="partnership.html">Partnership</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="nav-icon" onclick="menu()">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
+    <nav class="tab-desk">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="partnership.html">Partnership</a>
@@ -16,15 +34,20 @@
     </nav>
     <main>
         <h1>Frequently Asked Questions</h1>
-        <h2>How can I volunteer?</h2>
-        <p>Visit our Contact page and fill out the form to express your interest in volunteering.</p>
-        <h2>What animals do you rescue?</h2>
-        <p>We rescue a variety of local wildlife including birds, mammals, and reptiles.</p>
-        <h2>How can I support Wild Rescues?</h2>
-        <p>You can support us by donating, volunteering, or becoming a sponsor. See our Partnership page for more information.</p>
+        <div id="questions">
+            <p onclick="ans1()">How can I determine if a baby animal is an orphan?</p>
+            <p onclick="ans2()">How can I tell if an animal has rabies?</p>
+            <p onclick="ans3()">I found a baby bird that fell from its nest. Will the parents orphan it if I touch it?</p>
+            <p onclick="ans4()">How can I volunteer?</p>
+        </div>
+        <div id="answer">
+            <h2>Answer:</h2>
+            <p></p>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Wild Rescues. All Rights Reserved.</p>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

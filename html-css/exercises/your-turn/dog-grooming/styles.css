@@ -461,7 +461,6 @@ h1, h2, h3 {
 
 
 /* Hamburger menu styles */
-/* Telephone link styles */
 .nav-toggle {
     display: none;
     background: none;
@@ -473,7 +472,9 @@ h1, h2, h3 {
     right: 1.5rem;
     z-index: 1001;
     cursor: pointer;
+    /* Animation applied only on mobile */
 }
+
 .nav-list {
     transition: max-height 0.3s ease;
     overflow: hidden;
@@ -486,6 +487,7 @@ h1, h2, h3 {
     /* Show hamburger menu button on mobile */
     .nav-toggle {
         display: block;
+        animation: fadeInSlideDown 0.6s ease;
     }
     /* Mobile navigation menu styles */
     nav ul.nav-list {
@@ -500,6 +502,7 @@ h1, h2, h3 {
         padding: 0;
         margin: 0;
         z-index: 1000;
+        transition: max-height 0.3s ease;
     }
     /* Expanded mobile navigation menu */
     nav ul.nav-list.open {
@@ -513,78 +516,14 @@ h1, h2, h3 {
     }
 }
 
-/* Mobile viewport layout */
-@media (max-width: 600px) {
-    /* Adjust body font size and spacing for mobile */
-    body {
-        font-size: 1rem;
-        padding: 0;
-        margin: 0;
-    }
-    /* Add horizontal padding for mobile layout */
-    header, main, section, nav, footer {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        box-sizing: border-box;
-    }
-    /* Reduce header padding on mobile */
-    header {
-        padding: 1rem 0.5rem;
-    }
-    /* Stack nav links vertically on mobile */
-    nav ul {
-        flex-direction: column;
-        gap: 1rem;
-        margin: 0.5rem 0 0 0;
-    }
-    /* Adjust hero section for mobile */
-    #hero {
-        padding: 2rem 1rem;
-        font-size: 1.1rem;
-        background-size: cover;
-    }
-    /* Rounded corners for services and contact sections */
-    #services, #contact {
-        padding: 1rem;
-        margin: 1rem auto;
-        max-width: 100%;
-        box-shadow: none;
-        border-radius: 1.25rem;
-    }
-    /* Reduce heading size on mobile */
-    h1, h2 {
-        font-size: 1.5rem;
-    }
-    /* Adjust list padding for mobile */
-    ul {
-        padding-left: 1rem;
-    }
-    /* Reduce form gap on mobile */
-    form {
-        gap: 0.5rem;
-    }
-    /* Make form fields full width on mobile */
-    input, textarea {
-        font-size: 1rem;
-        width: 100%;
-    }
-    /* Make button full width on mobile */
-    button {
-        width: 100%;
-        font-size: 1rem;
-    }
-}
-
-/* Hero section with semi-transparent background */
-#hero {
-    background: rgba(109, 179, 242, 0.18);
-    border-radius: 1rem;
-    position: relative;
-}
-#hero figure img,
-video {
-    /* Add shared styles for images and video elements if needed */
-    max-width: 100%;
-    height: auto;
-    display: block;
+/* Animate hamburger icon in */
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

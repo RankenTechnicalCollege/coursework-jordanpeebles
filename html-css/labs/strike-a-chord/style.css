@@ -6,6 +6,8 @@
 figcaption {
     font-size: 1em;
 }
+
+/* Desktop styles */
 @media (min-width: 901px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -26,10 +28,17 @@ figcaption {
     .btn {
         grid-column: 1 / span 2;
     }
+
+    nav li a:hover {
+        transform: scale(1.2);
+    }
 }
+
 aside {
     grid-column: 1 / span 4;
 }
+
+/* Tablet styles */
 @media (min-width: 601px) and (max-width: 900px) {
     .grid {
         display: grid;
@@ -42,7 +51,32 @@ aside {
         width: 70%;
         margin: 0 auto;
     }
+
+    /* Tablet Viewport: Style rule for header content */
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+
+    /* Tablet nav area style rules */
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav li a {
+        color: #373684;
+        text-decoration: none;
+    }
+
+    .tab-desk,
+    #menu-links,
+    .mobile-nav {
+        display: none;
+    }
 }
+
+/* Mobile styles */
 @media (max-width: 600px) {
     th, td {
         border: 1px solid #373684;
@@ -71,8 +105,7 @@ aside {
         font-size: 1.5em;
         font-weight: bold;
     }
-}
-@media (max-width: 600px) {
+
     aside {
         text-align: center;
         font-size: 1.5em;
@@ -110,6 +143,7 @@ aside {
     }
 }
 
+/* Tel link styles */
 .tel-link {
     background-color: #373684;
     padding: 2%;
@@ -163,34 +197,16 @@ form #submit {
 * {
     box-sizing: border-box;
 }
-#nav li {
-    display: block;
-    border-top: 1px solid #e5e9fc;
-    font-size: 1.25em;
+
+/* Removed invalid #nav li rule */
+
+/* Mobile style rules section */
+.tab-desk,
+#menu-links {
+    display: none;
 }
 
-/*  */
-
-
-/*  */
-/* Style rules for mobile viewport */
-
-  
-    .tab-desk {
-        display: inline-block;
-        font-size: 2em;
-        color: #333;
-    }
-
-    #hero.tab-desk {
-        width: 100%;
-        height: 200px;
-        background: #f0f0f0;
-        margin-top: 20px;
-    }
 /* Music Site Stylesheet */
-
-
 body, ul, section, aside, figure, figcaption {
     margin: 0;
     padding: 0;
@@ -212,6 +228,12 @@ h1 {
     font-size: 1.5em;
 }
 
+header h1 {
+    font-size: 1.5em;
+    padding: 4%;
+    margin-right: 15%;
+}
+
 .tab.desk {
     color: #e67e22;
     font-size: 1.5em;
@@ -224,9 +246,11 @@ h1 {
     margin: 2em auto;
     max-width: 600px;
 }
+
 .tab-desk {
     display: none;
 }
+
 /* Instrument styles */
 .piano {
     min-height: 80px;
@@ -235,4 +259,27 @@ h1 {
 }
 .action {
     font-size: 1.25em;
+}
+
+/* Mobile nav styles */
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
 }

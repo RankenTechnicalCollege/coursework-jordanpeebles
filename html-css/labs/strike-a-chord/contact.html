@@ -11,6 +11,13 @@
     <h1 class="music-title">
         <span class="tab-desk">&#9835;&#9835;</span> Contact Us <span class="tab-desk">&#9835;&#9835;</span>
     </h1>
+    <nav class="tab-desk">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="contact.html">Contact</a>
+    </nav>
     <div id="main">
         <div id="contact">
             <h2>Contact us today to schedule your first lesson.</h2>
@@ -22,7 +29,7 @@
                 width="400"
                 height="300"
                 style="border:0;"
-                allowfullscreen=""
+                allowfullscreen
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 title="Chicago, IL Location Map">
@@ -52,7 +59,6 @@
                     <label for="phone">Phone:</label>
                     <input type="tel" id="phone" name="phone">
                 </fieldset>
-                <button type="submit" id="submit" class="btn">Submit</button>
                 <fieldset>
                     <legend>Musical Interest</legend>
                     <p>I am interested in:</p>
@@ -69,9 +75,24 @@
                         <input type="checkbox" name="interest_rent" id="rent" value="Rental Equipment">Rental Equipment
                     </label>
                 </fieldset>
+                <button type="submit" id="submit" class="btn">Submit</button>
             </form>
         </div>
     </div>
     <div id="hero" class="tab-desk"></div>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()" href="javascript:void(0);">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

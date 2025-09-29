@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Rentals</title>
     <!-- rentals.html, September 21, 2025 -->
     <!-- Google Fonts: Roboto -->
@@ -14,38 +14,47 @@
 </head>
 <body>
     <h1 class="music-title"><span class="tab-desk">&#9835;&#9835;</span> Rentals Page <span class="tab-desk">&#9835;&#9835;</span></h1>
+    <nav class="tab-desk">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="contact.html">Contact</a>
+    </nav>
     <main>
         <div id="rental">
-            <h2>We rent many differnt kinds of musical equipment. See our rental rates below.</h2>
+            <h2>We rent many different kinds of musical equipment. See our rental rates below.</h2>
             <table>
                 <caption>Rental Rates</caption>
-                <tbody>
-                    <tr><!-- Row 1 -->
+                <thead>
+                    <tr>
                         <th scope="col">Equipment</th>
                         <th scope="col">Daily Rate</th>
                         <th scope="col">Weekend Rate</th>
                     </tr>
-                    <tr><!-- Row 2 -->
+                </thead>
+                <tbody>
+                    <tr>
                         <td>Guitars</td>
                         <td>$25</td>
                         <td>$40</td>
                     </tr>
-                    <tr><!-- Row 3 -->
+                    <tr>
                         <td>Keyboards</td>
                         <td>$35</td>
                         <td>$60</td>
                     </tr>
-                    <tr><!-- Row 4 -->
+                    <tr>
                         <td>Drum Kits</td>
                         <td>$50</td>
                         <td>$75</td>
                     </tr>
-                    <tr><!-- Row 5 -->
+                    <tr>
                         <td>Microphones</td>
                         <td>$10</td>
                         <td>$15</td>
                     </tr>
-                    <tr><!-- Row 6 -->
+                    <tr>
                         <td>DJ Equipment</td>
                         <td>$22</td>
                         <td>$38</td>
@@ -54,5 +63,19 @@
             </table>
         </div>
     </main>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()" href="javascript:void(0);">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

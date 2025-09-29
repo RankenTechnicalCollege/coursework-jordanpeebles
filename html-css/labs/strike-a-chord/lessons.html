@@ -1,4 +1,4 @@
-<!-- Updated: September 28, 2025 -->
+<!-- Updated: September 29, 2025 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192.png">
 </head>
 <body>
-    <nav>
+    <nav class="tab-desk">
         <a href="index.html">Home</a>
         <a href="lessons.html">Lessons</a>
         <a href="instructors.html">Instructors</a>
@@ -101,5 +101,19 @@
     <footer>
         <p>Contact us: <a href="mailto:info@strikeachord.com">info@strikeachord.com</a></p>
     </footer>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()" href="javascript:void(0);">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

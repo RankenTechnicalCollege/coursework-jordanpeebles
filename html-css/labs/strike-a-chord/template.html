@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Template</title>
     <!-- Google Fonts: Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -12,12 +12,25 @@
     <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192.png">
 </head>
 <body>
-    <nav>
+    <nav class="tab-desk">
         <a href="index.html">Home</a>
         <a href="lessons.html">Lessons</a>
         <a href="instructors.html">Instructors</a>
         <a href="rentals.html">Rentals</a>
         <a href="contact.html">Contact</a>
+    </nav>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()" href="javascript:void(0);">
+            <div>&#9776;</div>
+        </a>
     </nav>
     <h1 style="font-family: 'Roboto', Arial, sans-serif;"><span class="tab-desk">&#9835;&#9835;</span> Template Page <span class="tab-desk">&#9835;&#9835;</span></h1>
     <div id="hero" class="tab-desk"></div>
@@ -27,5 +40,6 @@
     <footer>
         <p>Contact us: <a href="mailto:info@strikeachord.com">info@strikeachord.com</a></p>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

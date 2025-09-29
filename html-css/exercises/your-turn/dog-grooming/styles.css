@@ -443,7 +443,7 @@ h1, h2 {
         margin-bottom: 1.5rem;
     }
 }
-h1, h2, h3, article, section, aside, figure, figcaption {
+h1, h2, h3, article, section, aside, figure, figcaption, video, img {
     margin: 0;
     padding: 0;
     border: 0;
@@ -573,4 +573,18 @@ h1, h2, h3 {
         width: 100%;
         font-size: 1rem;
     }
+}
+
+/* Hero section with semi-transparent background */
+#hero {
+    background: rgba(109, 179, 242, 0.18);
+    border-radius: 1rem;
+    position: relative;
+}
+#hero figure img,
+video {
+    /* Add shared styles for images and video elements if needed */
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

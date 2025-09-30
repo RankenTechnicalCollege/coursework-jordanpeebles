@@ -1,6 +1,6 @@
 /*
-Author: Maria Cruz
-Date: Current Date
+Author: Jordan Peebles 
+Date: 9/29/2025
 File Name: styles.css
 */
 
@@ -58,9 +58,49 @@ main a {
 }
 
 /* Orange */
+.orange-hex {
+    background-color: #ff9900;
+    color: #fff;
+}
 
+.orange-rgb {
+    background-color: rgb(255, 153, 0); /* Equivalent to #ff9900 */
+    color: #fff;
+}
+
+.orange-hsl {
+    background-color: hsl(36, 100%, 50%); /* Equivalent to #ff9900 */
+    color: #fff;
+}
 
 /* Purple */
+.purple-hex {
+    background-color: #8000ff;
+    color: #fff;
+}
 
+.purple-rgb {
+    background-color: rgb(128, 0, 255); /* Equivalent to #8000ff */
+    color: #fff;
+}
+
+.purple-hsl {
+    background-color: hsl(270, 100%, 50%); /* Equivalent to #8000ff */
+    color: #fff;
+}
 
 /* Green */
+.green-hex {
+    background-color: #00cc66;
+    color: #fff;
+}
+
+.green-rgb {
+    background-color: rgb(0, 204, 102); /* Equivalent to #00cc66 */
+    color: #fff;
+}
+
+.green-hsl {
+    background-color: hsl(150, 100%, 40%); /* Equivalent to #00cc66 */
+    color: #fff;
+}

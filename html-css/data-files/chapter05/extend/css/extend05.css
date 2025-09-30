@@ -1,8 +1,9 @@
 /* 
-Style sheet created by: 
-Student's Name 
-Today's Date 
+Style sheet created by: Jordan Peebles
+Student's Name: Jordan Peebles
+Today's Date: 9/14/2025
 */
+
 body {
     background-color: #dde3fd;
 }
@@ -22,12 +23,29 @@ body {
 }
 
 /* sticky */
-
+.sticky {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+}
 
 /* relative */
-
+.relative {
+    position: relative;
+    top: 40px;
+    left: 80px;
+}
 
 /* fixed */
-
+.fixed {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+}
 
 /* absolute */
+.absolute {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+}

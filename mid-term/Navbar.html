@@ -1,19 +1,29 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Main navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <<a class="navbar-brand" href="#">
-  <img src="assets/images/brc_logo.jpeg" alt="Belleville Running Club Logo" height="50">
-  <img src="assets/images/mid-term/images/brcvid.mp4" alt="BRC Video" height="50">
-</a>
- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <!-- Brand: keep BRC logo (do not change) -->
+      <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="Belleville Running Club home">
+        <img src="images/brclogo.jpg" alt="Belleville Running Club Logo" height="50" class="me-2">
+        <span class="d-none d-md-inline">Belleville Running Club</span>
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Collapsible nav links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#weekly-runs">Weekly Runs</a></li>
           <li class="nav-item"><a class="nav-link" href="#c25k">Couch to 5K</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club" target="_blank">Gear Store</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club"
+               target="_blank" rel="noopener noreferrer">Gear Store</a>
+          </li>
         </ul>
       </div>
     </div>

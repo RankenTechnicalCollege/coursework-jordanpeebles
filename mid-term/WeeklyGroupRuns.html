@@ -1,30 +1,54 @@
-<section id="weekly-runs" class="py-5 bg-light">
+<section id="weekly-runs" class="py-5 bg-light" aria-labelledby="weekly-runs-heading">
+  <!-- Weekly Group Runs -->
   <div class="container text-center">
-    <h2>Weekly Group Runs</h2>
+    <h2 id="weekly-runs-heading">Weekly Group Runs</h2>
+
+    <!-- Membership & Gear CTAs (required content) -->
+    <p class="mt-2">
+      <a href="https://runsignup.com/Club/Join/1858" target="_blank" rel="noopener noreferrer" class="btn btn-primary me-2" aria-label="Join Belleville Running Club on RunSignUp">Join BRC</a>
+      <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" aria-label="Belleville Running Club gear store">Shop Gear</a>
+    </p>
+
     <div class="row mt-4">
-      <div class="col-md-6">
-        <div class="card mb-4">
+      <article class="col-md-6">
+        <div class="card mb-4 h-100">
           <div class="card-body">
-            <h5>Thursday 6PM</h5>
-            <p>Casa Maria parking lot<br>100 N High St, Belleville, IL 62220</p>
-            <a href="https://www.mapmyrun.com/routes/view/10951380" target="_blank" class="btn btn-primary m-1">3-Mile Route</a>
-            <a href="https://www.strava.com/routes/793981" target="_blank" class="btn btn-secondary m-1">5-Mile Route</a>
+            <h5 class="card-title">Thursday — 6PM</h5>
+            <p class="card-text">Casa Maria parking lot<br>100 N High St, Belleville, IL 62220</p>
+            <p class="mb-2"><strong>Both runs offer 3-mile and 5-mile options.</strong></p>
+            <a href="https://www.mapmyrun.com/routes/view/10951380" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary m-1" aria-label="Thursday 3 mile route (MapMyRun)">3-Mile Route</a>
+            <a href="https://www.strava.com/routes/793981" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary m-1" aria-label="Thursday 5 mile route (Strava)">5-Mile Route</a>
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-4">
+      </article>
+
+      <article class="col-md-6">
+        <div class="card mb-4 h-100">
           <div class="card-body">
-            <h5>Saturday 8AM</h5>
-            <p>LongStory Coffee<br>732 S Illinois St, Belleville, IL 62220</p>
-            <a href="https://www.mapmyrun.com/routes/view/10951380" target="_blank" class="btn btn-primary m-1">3-Mile Route</a>
-            <a href="https://www.strava.com/routes/793981" target="_blank" class="btn btn-secondary m-1">5-Mile Route</a>
+            <h5 class="card-title">Saturday — 8AM</h5>
+            <p class="card-text">LongStory Coffee<br>732 S Illinois St, Belleville, IL 62220</p>
+            <p class="mb-2 visually-hidden">Both runs offer 3-mile and 5-mile options.</p>
+            <a href="https://www.mapmyrun.com/routes/view/10951380" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary m-1" aria-label="Saturday 3 mile route (MapMyRun)">3-Mile Route</a>
+            <a href="https://www.strava.com/routes/793981" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary m-1" aria-label="Saturday 5 mile route (Strava)">5-Mile Route</a>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-    <div class="ratio ratio-16x9 mt-4">
-      <iframe src="https://www.google.com/maps?q=100+N+High+St,+Belleville,+IL+62220&output=embed" allowfullscreen></iframe>
+
+    <!-- Embedded Google Map showing Casa Maria / 100 N High St (required) -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-12 col-md-10">
+        <div class="ratio ratio-16x9">
+          <iframe
+            title="Map: Casa Maria parking lot, 100 N High St, Belleville, IL"
+            src="https://www.google.com/maps?q=100+N+High+St,+Belleville,+IL+62220&output=embed"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="small text-muted mt-2">Map shows Casa Maria parking lot meeting location. For LongStory Coffee meeting point, use the address listed above.</p>
+      </div>
     </div>
   </div>
 </section>

@@ -16,8 +16,9 @@ a {
 
 /* === Navbar === */
 .navbar-brand img {
-  max-height: 5px;
-  max-width: 10px;
+  max-height: 50px;
+  width: auto;
+  display: block;
 }
 
 .nav-link {
@@ -28,17 +29,21 @@ a {
 .nav-link:hover {
   color: #ffc107;
 }
-/* === Overlay for Video Banner Text === */
-#home .position-absolute {
+
+/* === Overlay for Banner Text === */
+#home .position-absolute,
+.overlay-text {
   background-color: rgba(0, 0, 0, 0.6); /* Dark overlay behind text */
   color: #fff; /* Bright white text */
   padding: 2rem;
   border-radius: 0.5rem;
   max-width: 90%;
   margin: auto;
+  position: relative;
+  z-index: 2;
 }
 
-/* === Ensure all headings and links are readable === */
+/* === Ensure all headings and links are readable in the banner === */
 #home h2, #home h3, #home h6, #home p, #home a, #home ul li {
   color: #ffffff;
 }
@@ -48,13 +53,14 @@ a {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
-/* === Video Banner Section === */
+/* === Video / Image Banner Section === */
 #home {
   position: relative;
   overflow: hidden;
 }
+
 .bike-banner {
-  background-image: url('assets/images/bike.jpg');
+  background-image: url('../assets/images/bike.jpg');
   background-size: cover;
   background-position: center;
   min-height: 80vh;
@@ -70,31 +76,20 @@ a {
   z-index: 1;
 }
 
-.overlay-text {
-  position: relative;
-  z-index: 2;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.6); /* optional box around text */
-  border-radius: 0.5rem;
-}
-
+/* ensure video fits but remains covered */
 #home video {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-#home .position-absolute {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  border-radius: 0.5rem;
-}
-
+/* headings inside #home */
 #home h2 {
   font-size: 2.5rem;
   font-weight: 700;
 }
 
+/* list styles inside banner */
 #home ul {
   margin-top: 1rem;
   padding-left: 0;
@@ -132,24 +127,34 @@ footer {
   background-color: #212529;
   color: #fff;
   font-size: 0.9rem;
-}
-/* Couch to 5K Section with Background Image */
-.c25k-section {
-  background: img(url(../images/bike.jpg)) no-repeat center center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
+  padding: 1.5rem 0;
 }
 
+/* === Couch to 5K Section with Background Image (fixed) === */
+.c25k-section {
+  background-image: url('../assets/images/bike.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+/* overlay sits above background but below content */
 .c25k-section::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
-  z-index: -1;
+  z-index: 0;
 }
 
+/* ensure content sits above the overlay */
+.c25k-section .container {
+  position: relative;
+  z-index: 1;
+}
 
 /* === Responsive Typography === */
 @media (max-width: 767px) {

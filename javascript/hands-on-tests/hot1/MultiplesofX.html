@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Challenge 5 - Multiples of 15</title>
+  <script defer>
+    function printMultiples() {
+      var out = "";
+      // multiples of 15 between 1 and 100
+      for (var n = 15; n <= 90; n += 15) {
+        out += n + (n < 90 ? ", " : "");
+      }
+      document.getElementById("multiples").textContent = out;
+    }
+
+    document.addEventListener("DOMContentLoaded", printMultiples);
+  </script>
+</head>
+<body>
+  <h1>Challenge 5 - Multiples of 15 (1-100)</h1>
+  <p id="multiples"></p>
+</body>
+</html>

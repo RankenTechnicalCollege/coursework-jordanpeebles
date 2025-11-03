@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Challenge 1 - Favorite Movie List</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script defer>
+    // initial array of 3 favorite movies
+    var favoriteMovies = ["The Matrix", "The Princess Bride", "Inception"];
+
+    function renderMovies() {
+      var out = "<ul>";
+      // use a for loop to print movies (rubric requirement)
+      for (var i = 0; i < favoriteMovies.length; i++) {
+        out += "<li>" + favoriteMovies[i] + "</li>";
+      }
+      out += "</ul>";
+      document.getElementById("movieList").innerHTML = out;
+    }
+
+    function addMovie() {
+      var input = document.getElementById("movieInput");
+      var msg = document.getElementById("message");
+      var title = input.value.trim();
+
+      // validation per rubric: require non-empty string
+      if (title === "") {
+        msg.textContent = "Please enter a movie title.";
+        msg.style.color = "red";
+        return;
+      }
+
+      favoriteMovies.push(title);
+      input.value = "";
+      msg.textContent = "Movie added.";
+      msg.style.color = "green";
+
+      // show updated list (must happen when Add Movie is clicked)
+      renderMovies();
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("addBtn").addEventListener("click", addMovie);
+      // initial render is allowed but the rubric requires the list to update on click as well
+      renderMovies();
+    });
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 16px; max-width: 640px; margin: auto; }
+    label { display:block; margin-top:12px; }
+    #movieList { margin-top:12px; }
+    #message { margin-top:8px; font-weight:600; }
+  </style>
+</head>
+<body>
+  <h1>Challenge 1 - Favorite Movie List</h1>
+
+  <label for="movieInput">Enter a favorite movie:</label>
+  <input id="movieInput" type="text" placeholder="Type a movie title">
+  <button id="addBtn" type="button">Add Movie</button>
+  <div id="message" aria-live="polite"></div>
+
+  <section>
+    <h2>Your Movies</h2>
+    <div id="movieList" aria-live="polite"></div>
+  </section>
+</body>
+</html>

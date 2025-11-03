@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Challenge 2 - Age Verification</title>
+  <script defer>
+    function verifyAge() {
+      var val = document.getElementById("ageInput").value.trim();
+      var msgElem = document.getElementById("result");
+
+      // require a non-empty integer string
+      if (val === "" || !/^\d+$/.test(val)) {
+        msgElem.textContent = "Please enter your age!";
+        return;
+      }
+
+      var num = parseInt(val, 10);
+
+      // out of realistic range
+      if (num < 1 || num > 200) {
+        msgElem.textContent = "Age out of range!";
+        return;
+      }
+
+      // age checks
+      if (num >= 21) {
+        msgElem.textContent = "Welcome to the venue!";
+      } else {
+        msgElem.textContent = "You're not old enough!";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("checkBtn").addEventListener("click", verifyAge);
+    });
+  </script>
+</head>
+<body>
+  <h1>Challenge 2 - Age Verification</h1>
+  <label for="ageInput">Enter your age:</label>
+  <input id="ageInput" type="text">
+  <button id="checkBtn" type="button">Verify Age</button>
+  <p id="result" aria-live="polite"></p>
+</body>
+</html>

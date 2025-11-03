@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Challenge 4 - Odd Numbers</title>
+  <script defer>
+    function printOdds() {
+      var out = "";
+      // for loop printing odd numbers from 1 to 100
+      for (var i = 1; i <= 100; i += 2) {
+        out += i + (i < 99 ? ", " : "");
+      }
+      document.getElementById("odds").textContent = out;
+    }
+
+    document.addEventListener("DOMContentLoaded", printOdds);
+  </script>
+</head>
+<body>
+  <h1>Challenge 4 - Odd Numbers 1 to 100</h1>
+  <p id="odds"></p>
+</body>
+</html>

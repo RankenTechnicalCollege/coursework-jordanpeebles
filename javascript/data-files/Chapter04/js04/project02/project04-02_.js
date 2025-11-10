@@ -1,10 +1,11 @@
+"use strict";
 /*    JavaScript 7th Edition
       Chapter 4
       Project 04-02
 
       Application to display a random Jane Austen Quote
-      Author: 
-      Date:   
+      Author: Jordan Peebles
+      Date:   11/09/2025
 
       Filename: project04-02.js
 */
@@ -31,29 +32,20 @@ window.addEventListener("load", quoteGenerator);
 
 // Function to generate and display a random quote
 function quoteGenerator() {
-   
    // Number of quotes in the array
-   quoteCount = quotes.length;
+   let quoteCount = quotes.length;
    
-   // Generate a random integer to select a quote
-   randomQuote = randomInt(0, quoteCount);
+   // Generate a random integer to select a quote (inclusive bounds)
+   // largest index is quoteCount - 1, so pass that as the highest parameter
+   let randomQuote = randomInt(0, quoteCount - 1);
    
    // Retrieve a randomly-selected quote
-   quote = quotes[randomQuotes];
+   let quote = quotes[randomQuote];
    
-   
-   // Display the random quote
-   document.getElementByTagName("blockquote")[1].innerHTML = quote;
+   // Display the random quote (first blockquote in the document)
+   document.getElementsByTagName("blockquote")[0].innerHTML = quote;
 }
 
-
-
-
-
-
-
-
-/*=================================================================*/
 // Function to return a randomly-selected integer between lowest and highest, inclusive
 function randomInt(lowest, highest) {
    let size = highest - lowest + 1;

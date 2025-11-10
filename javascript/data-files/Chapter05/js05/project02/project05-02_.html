@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 5
+      Hands-on Project 5-2
+
+      Author: Jordan Peebles
+      Date:   11/09/2025
+
+      Filename: project05-02.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+   <title>Hands-on Project 5-2</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="project05-02_.js" defer></script>
+
+   <style>
+      /* bucket thumbnails */
+      #photo_bucket img { width: 90px; height: 60px; margin: 6px; cursor: pointer; display:inline-block; }
+      /* ranked images in list (larger) */
+      #photo_list img { width: 220px; height: 140px; display:block; }
+      /* small layout helpers */
+      #instructions { float:left; width:220px; }
+      #photorank { margin-left:260px; }
+      #photo_bucket { display:block; padding-top:20px; }
+      ol#photo_list { list-style-position: inside; column-count: 2; column-gap: 40px; }
+      ol#photo_list li { break-inside: avoid; margin-bottom: 18px; }
+   </style>
+</head>
+
+<body>
+   <header>
+      <h1>Hands-on Project 5-2</h1>
+   </header>
+
+   <article>
+      <h2>Rank the Photos</h2>
+
+      <div id="container">
+         <div id="instructions">
+            <p>The following are the photo entries for this month's contest.
+               Click the images in the photo bucket below to add them to the list at the right.
+               Click an image from the list to return it to the photo bucket.
+            </p>
+
+            <!-- photo bucket: images referenced from the project02 folder -->
+            <div id="photo_bucket" aria-label="Photo bucket">
+               <img src="../project02/photo01.jpg" alt="photo01" />
+               <img src="../project02/photo02.jpg" alt="photo02" />
+               <img src="../project02/photo03.jpg" alt="photo03" />
+               <img src="../project02/photo04.jpg" alt="photo04" />
+               <img src="../project02/photo05.jpg" alt="photo05" />
+               <img src="../project02/photo06.jpg" alt="photo06" />
+               <img src="../project02/photo07.jpg" alt="photo07" />
+               <img src="../project02/photo08.jpg" alt="photo08" />
+               <img src="../project02/photo09.jpg" alt="photo09" />
+               <img src="../project02/photo10.jpg" alt="photo10" />
+               <img src="../project02/photo11.jpg" alt="photo11" />
+               <img src="../project02/photo12.jpg" alt="photo12" />
+            </div>
+         </div>
+
+         <div id="photorank">
+            <ol id="photo_list">
+               <!-- clicked images will be moved here by the script -->
+            </ol>
+         </div>
+      </div>
+   </article>
+</body>
+</html>

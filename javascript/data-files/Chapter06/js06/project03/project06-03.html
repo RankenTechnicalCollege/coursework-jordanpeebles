@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
    <!--
       JavaScript 7th Edition
       Chapter 6
       Hands-on Project 6-3
 
-      Author: 
-      Date:   
+      Author: Jordan Peebles
+      Date:   11/16/2025
 
       Filename: project06-03.html
    -->
-   <meta charset="utf-8" />
+   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 6-3</title>
-   <link rel="stylesheet" href="styles.css" />
+   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -30,25 +30,25 @@
          <section>
             <legend>Shipping Address</legend>
             <fieldset id="shipping">
-               
                <p><span>*</span> &mdash; Required Field</p>
                <label for="firstnameShip">First Name <span>*</span></label>
                <input type="text" required id="firstnameShip" name="firstnameShip" />
-               
+
                <label for="lastnameShip">Last Name <span>*</span></label>
                <input type="text" required id="lastnameShip" name="lastnameShip"  />
-               
+
                <label for="address1Ship">Address Line 1 <span>*</span></label>
                <input type="text" required id="address1Ship" name="address1Ship"   />
-               
+
                <label for="address2Ship">Address Line 2 <span>&nbsp;</span></label>
                <input type="text" id="address2Ship" name="address2Ship"   />
-               
+
                <label for="cityShip">City <span>*</span></label>
                <input type="text" required id="cityShip" name="cityShip"   />   
-               
+
                <label for="stateShip">State <span>*</span></label>
                <select id="stateShip" name="stateShip">
+                  <!-- All state options... -->
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -104,7 +104,7 @@
 
                <label for="countryShip">Country <span>*</span></label>
                <input type="text" required id="countryShip" name="countryShip" value="United States" />  
- 
+
                <label for="codeShip">Postal Code <span>*</span></label>
                <input type="text" required id="codeShip" name="codeShip" />                
             </fieldset>
@@ -113,27 +113,27 @@
          <section>
             <legend>Billing Address</legend>
             <fieldset id="billing">
-               
                <input type="checkbox" name="useShip" id="useShip" />
                <label id="cbLabel" for="useShip">Same as Shipping Address</label>
-               
+
                <label for="firstnameBill">First Name <span>*</span></label>
                <input type="text" required id="firstnameBill" name="firstnameBill"   />
-               
+
                <label for="lastnameBill">Last Name <span>*</span></label>
                <input type="text" required id="lastnameBill" name="lastnameBill"   />
-               
+
                <label for="address1Bill">Address Line 1 <span>*</span></label>
                <input type="text" required id="address1Bill" name="address1Bill" />
-               
+
                <label for="address2Bill">Address Line 2 <span>&nbsp;</span></label>
                <input type="text" id="address2Bill" name="address2Bill"   />
-               
+
                <label for="cityBill">City <span>*</span></label>
                <input type="text" required id="cityBill" name="cityBill"/>   
-               
+
                <label for="stateBill">State <span>*</span></label>
                <select id="stateBill" name="stateBill">
+                  <!-- All state options... -->
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -189,7 +189,7 @@
 
                <label for="countryBill">Country <span>*</span></label>
                <input type="text" required id="countryBill" name="countryBill" value="United States"  />  
- 
+
                <label for="codeBill">Postal Code <span>*</span></label>
                <input type="text" required id="codeBill" name="codeBill" />                
             </fieldset>

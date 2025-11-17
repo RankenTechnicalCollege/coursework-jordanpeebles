@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--
+      JavaScript
+
+      Author: Jordan Peebles
+      Date:   11/16/2025
+
+      Filename: index.html
+   -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Hands-on Project 7-3</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Test Chapter 4
+      </h1>
+   </header>
+
+   <article>
+      <h2>Steam Game Sale</h2>
+      <div>
+         <!-- FIX 1: Changed type="checkbox" to type="checkbox" for all items to work as checkboxes -->
+         <input type="checkbox" id="item1" value="1999" />
+         <label for="item1">Counter Strike ($19.99)</label><br />
+         <input type="checkbox" id="item2" value="2999" />
+         <label for="item2">Dark Souls III ($29.99)</label><br />
+         <!-- FIX 2: Corrected value from "1349" to "1449" to match actual price of $14.49 -->
+         <input type="checkbox" id="item3" value="1449" />
+         <label for="item3">Enter The Gungeon ($14.49)</label><br />
+         <input type="checkbox" id="item4" value="499" />
+         <label for="item4">Hover Junkers ($4.99)</label><br />
+         <input type="checkbox" id="item5" value="599" />
+         <label for="item5">Lethal League ($5.99)</label><br /><br />
+         
+         <!-- FIX 6: Changed type from "submit" to "button" to prevent form submission/page reload -->
+         <button type="button" id="sButton">Calculate</button>
+      </div>
+      <table>
+         <tr>
+            <td>Item Total:</td>
+            <td id="billSubtotal">$0.00</td>
+         </tr>
+         <tr>
+            <td>Tax (5%):</td>
+            <td id="billTax">$0.00</td>
+         </tr>
+         <tr>
+            <td>Total with Tax:</td>
+            <td id="billTotal">$0.00</td>
+         </tr>
+      </table>
+   </article>
+   <script>
+      "use strict";
+      
+      // NEW REQUIREMENT 1: Create formatted date and append to body
+      // Create new Date object
+      let currentDate = new Date();
+      
+      // Format date as "Day Month Date Year" (e.g., "Sun Nov 16 2025")
+      let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      
+      let formattedDate = days[currentDate.getDay()] + " " + 
+                         months[currentDate.getMonth()] + " " + 
+                         currentDate.getDate() + " " + 
+                         currentDate.getFullYear();
+      
+      // NEW REQUIREMENT 2: Create new div element and append to body
+      let dateDiv = document.createElement("div");
+      dateDiv.textContent = formattedDate;
+      dateDiv.style.textAlign = "center";
+      dateDiv.style.marginTop = "20px";
+      dateDiv.style.fontSize = "14px";
+      document.body.appendChild(dateDiv);
+      
+      // function to add values of selected check boxes and display total
+      function calcTotal() {
+         let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+         let subtotal = 0;
+         
+         // FIX 3: Changed variable name from 'total' to 'subtotal' for correct variable usage
+         // Calculate the sum of all checked items
+         for (let i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+               subtotal += Number(checkboxes[i].value);
+            }
+         }
+         
+         // FIX 4: Changed tax calculation to subtotal * 0.05 (5% tax as specified)
+         let tax = subtotal * 0.05;
+         
+         // FIX 5: Changed total calculation from subtotal - tax to subtotal + tax
+         // Total is the sum of subtotal and tax
+         let total = subtotal + tax;
+         
+         // Display results (divide by 100 because values are stored in cents)
+         document.getElementById("billSubtotal").innerHTML = "$" + (subtotal / 100).toFixed(2);
+         document.getElementById("billTax").innerHTML = "$" + (tax / 100).toFixed(2);
+         document.getElementById("billTotal").innerHTML = "$" + (total / 100).toFixed(2);
+         
+         // NEW REQUIREMENT 3: Clear all checkbox selections after calculation
+         for (let i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = false;
+         }
+      }
+
+      // FIX 6: Fixed addEventListener syntax - removed comma, proper quotes
+      // add event listener to Submit button
+      let submitButton = document.getElementById("sButton");
+      submitButton.addEventListener("click", calcTotal); 
+
+   </script>
+</body>
+
+</html>

@@ -4,8 +4,8 @@
       Project 07-02
 
       Project to deal cards from a shuffled poker deck
-      Author: 
-      Date:   
+      Author: Jordan Peebles
+      Date:   11/17/2025
 
       Filename: project07-02.js
 */
@@ -28,8 +28,33 @@ let cardsLeft = document.getElementById("cardsLeft");
 let deck = [];
 
 document.getElementById("deal").onclick = function() {   
-   
-
+   // Create a for loop that iterates through the cards node list
+   for (let card of cards) {
+      // If deck length is 0, call newDeck()
+      if (deck.length === 0) {
+         newDeck();
+      }
+      
+      // Use pop() to remove last item from deck and store as text content
+      let dealtCard = deck.pop();
+      card.textContent = dealtCard;
+      
+      // Change the value of cardsLeft to the length of deck
+      cardsLeft.textContent = deck.length;
+   }
 }
 
-            
+// Function to generate a new shuffled deck
+function newDeck() {
+   // Split deckStr at each comma and store in deck array
+   deck = deckStr.split(",");
+   
+   // Sort the deck using shuffle() as the compare function
+   deck.sort(shuffle);
+}
+
+// Shuffle function with parameters a and b
+function shuffle(a, b) {
+   // Return 0.5 minus a randomly-generated number
+   return 0.5 - Math.random();
+}

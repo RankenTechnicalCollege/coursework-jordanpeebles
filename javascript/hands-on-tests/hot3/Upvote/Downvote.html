@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 class="card-title mb-4">Product Review</h2>
+                        <p class="lead mb-4">Rate this amazing product!</p>
+
+                        <!-- Voting Buttons -->
+                        <div class="d-flex justify-content-center gap-3 mb-4">
+                            <button id="upvoteBtn" class="btn btn-success btn-lg">
+                                <i class="bi bi-hand-thumbs-up-fill"></i> Thumbs Up
+                            </button>
+                            <button id="downvoteBtn" class="btn btn-danger btn-lg">
+                                <i class="bi bi-hand-thumbs-down-fill"></i> Thumbs Down
+                            </button>
+                        </div>
+
+                        <!-- Statistics Display -->
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Rating Statistics</h5>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="mb-2">
+                                            <i class="bi bi-hand-thumbs-up-fill text-success fs-3"></i>
+                                        </div>
+                                        <h6>Total Upvotes</h6>
+                                        <h3 class="text-success" id="upvoteCount">0</h3>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="mb-2">
+                                            <i class="bi bi-hand-thumbs-down-fill text-danger fs-3"></i>
+                                        </div>
+                                        <h6>Total Downvotes</h6>
+                                        <h3 class="text-danger" id="downvoteCount">0</h3>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="mb-2">
+                                            <i class="bi bi-calculator-fill text-primary fs-3"></i>
+                                        </div>
+                                        <h6>Total Score</h6>
+                                        <h3 class="text-primary" id="totalScore">0</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Initialize vote counters
+        let upvotes = 0;
+        let downvotes = 0;
+
+        // Function to update the display
+        function updateDisplay() {
+            document.getElementById('upvoteCount').textContent = upvotes;
+            document.getElementById('downvoteCount').textContent = downvotes;
+            document.getElementById('totalScore').textContent = upvotes - downvotes;
+        }
+
+        // Upvote button click handler
+        document.getElementById('upvoteBtn').addEventListener('click', function() {
+            upvotes++;
+            updateDisplay();
+        });
+
+        // Downvote button click handler
+        document.getElementById('downvoteBtn').addEventListener('click', function() {
+            downvotes++;
+            updateDisplay();
+        });
+    </script>
+</body>
+</html>

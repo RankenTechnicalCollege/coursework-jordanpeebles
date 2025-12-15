@@ -1,4 +1,237 @@
 /* ========================= */
+/* Social Media Icon Styles  */
+/* ========================= */
+.social-icon {
+  display: inline-block;
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+.social-icon img {
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.social-icon img:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  transform: scale(1.1);
+}
+/* ========================= */
+/* Hamburger Menu Transform  */
+/* ========================= */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+/* ========================= */
+/* Table Styles for Rubric   */
+/* ========================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+th, td {
+  border: 1px solid #6db3f2;
+  padding: 0.75em 1em;
+  text-align: left;
+}
+th {
+  background: #eaf4fb;
+  font-weight: bold;
+}
+caption {
+  caption-side: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/* Hide table and show list on mobile */
+@media (max-width: 600px) {
+  table {
+    display: none;
+  }
+  .mobile-table-list {
+    display: block;
+    margin-bottom: 2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1em;
+  }
+}
+
+/* Tablet styles for table */
+@media (min-width: 601px) and (max-width: 900px) {
+  table {
+    font-size: 0.95em;
+  }
+  th, td {
+    padding: 0.5em 0.7em;
+  }
+}
+
+/* Desktop styles for table */
+@media (min-width: 901px) {
+  table {
+    font-size: 1.1em;
+  }
+  th, td {
+    padding: 1em 1.5em;
+  }
+}
+
+/* End of table styles for rubric */
+/* CSS Reset for semantic elements */
+figure, figcaption, section, article, aside {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.tagline {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+/* CSS Grid for main layout */
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+  margin: 2em 0;
+}
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.side-info {
+  background: #f6fbff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 1em;
+  font-size: 1em;
+}
+/* ========================= */
+/* Media Queries for Rubric  */
+/* ========================= */
+
+/* Tablet Viewport: 601px to 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  /* Tablet-specific styles here */
+  .tablet-only {
+    display: block;
+  }
+  .desktop-only, .mobile-only {
+    display: none;
+  }
+}
+
+/* Desktop Viewport: 901px and up */
+@media (min-width: 901px) {
+  /* Desktop-specific styles here */
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only, .tablet-only {
+    display: none;
+  }
+  /* Example dynamic pseudo-class for rubric */
+  a:hover {
+    color: #6db3f2;
+    text-decoration: underline;
+  }
+}
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.rounded {
+  border-radius: 16px !important;
+}
+
+.shadow {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 3px solid #6db3f2;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.nav-main {
+  padding: 0.5em 1em;
+  background: #f6fbff;
+  border-radius: 8px;
+}
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+.hamburger span {
+  height: 4px;
+  width: 100%;
+  background: #333;
+  margin: 4px 0;
+  border-radius: 2px;
+  display: block;
+  transition: all 0.3s cubic-bezier(.4,2,.3,1);
+}
+@media (max-width: 800px) {
+  .hamburger {
+    display: flex;
+  }
+  #main-nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  #main-nav.open {
+    display: flex;
+    animation: navFadeIn 0.4s;
+  }
+}
+@keyframes navFadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ========================= */
 /* Form Styles - Responsive  */
 /* ========================= */
 

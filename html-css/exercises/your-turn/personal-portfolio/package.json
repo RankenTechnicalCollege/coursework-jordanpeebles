@@ -1,0 +1,13 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'No build step defined'",
+    "deploy": "gh-pages -d ."
+  },
+  "homepage": "https://github.com/jordanpeebles.github.io/portfolio-final",
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

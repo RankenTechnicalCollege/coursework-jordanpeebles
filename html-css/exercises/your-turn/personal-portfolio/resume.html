@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Resume</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="images/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="coursework.html">Coursework</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="download">
+        <a href="resume.docx" download>Download Resume</a>
+      </div>
+      <section id="projects">
+        <h2>Key Projects</h2>
+        <ul>
+          <li>Midterm Project: <a href="mid-term" target="_blank">View Midterm</a></li>
+          <li>Final Project (React CRUD App): <a href="https://github.com/jordanpeebles/portfolio-final/settings/pages" target="_blank">View Final Project</a></li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <p>[Application Web Development Technology, Ranken Technical College, Graduation: Dec, 2026]</p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>Bootstrap</li>
+          <li>Webpage Design</li>
+        </ul>
+      </section>
+      <section id="experience">
+        <h2>Experience</h2>
+        <h3>Application and Web Development Student</h3>
+        <p>Ranken Technical College Projects — Wentzville, MO</p>
+        <p>August 2025 – Present</p>
+        <ul>
+          <li>Designed responsive webpages using HTML, CSS, and Bootstrap</li>
+          <li>Developed interactive features with JavaScript</li>
+          <li>Created a functional webpage for Belleville Running Club</li>
+          <li>Applied coding best practices to optimize performance</li>
+        </ul>
+      </section>
+
+      <section id="react-crud-rubric">
+        <h2>React CRUD Application Rubric</h2>
+        <ul>
+          <li>Pick an entity (person, place, or thing) with 4+ properties (e.g., Student: ID, First Name, Last Name, Grad Year)</li>
+          <li>Display a list of entities on page load (5pts)</li>
+          <li>Create a new entity with form controls (10pts)</li>
+          <li>Read individual entities by searching for a property (10pts)</li>
+          <li>Update individual entities (10pts)</li>
+          <li>Delete individual entities (10pts)</li>
+          <li>Save and read entities from local storage (10pts)</li>
+          <li>Utilize Bootstrap for mobile responsive site (10pts)</li>
+          <li>Implement Font Awesome icon(s) (5pts)</li>
+          <li>Apply custom CSS (5pts)</li>
+        </ul>
+        <p><strong>Deployment:</strong> App must be deployed to GitHub Pages using <code>gh-pages</code> and source code pushed to the main branch. See instructions below.</p>
+      </section>
+
+      <section id="deployment-instructions">
+        <h2>GitHub Pages Deployment Instructions</h2>
+        <ol>
+          <li>Install gh-pages: <code>npm install gh-pages</code></li>
+          <li>Update <code>vite.config.js</code>: set <code>base: '/YOUR REPOSITORY NAME/'</code></li>
+          <li>Update <code>package.json</code>:
+            <ul>
+              <li>In <code>scripts</code> add: <code>"deploy": "gh-pages -d dist"</code></li>
+              <li>Outside <code>scripts</code> add: <code>"homepage": "https://github.com/YOUR_USER_NAME.github.io/YOUR_REPOSITORY_NAME"</code></li>
+            </ul>
+          </li>
+          <li>Build the app: <code>npm run build</code></li>
+          <li>Deploy to GitHub Pages: <code>npm run deploy</code></li>
+          <li>Commit and push all code to the main branch:</li>
+          <ul>
+            <li><code>git add .</code></li>
+            <li><code>git commit -m "React CRUD app initial commit"</code></li>
+            <li><code>git push</code></li>
+          </ul>
+        </ol>
+        <p>For more details, see the project rubric and video walkthroughs.</p>
+      </section>
+      </section>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 My Portfolio</p>
+    </footer>
+  </body>
+  </html>

@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Added meta viewport for mobile responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <!-- Added Google Fonts for custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="images/jordan.jpg" alt="Photo of Jordan" height="200" width="300">
+    <!-- Header uses .rounded and .shadow for rubric compliance (rounded corners, shadow) -->
+    <header class="rounded shadow">
+        <!-- Use <figure> and <figcaption> for rubric compliance -->
+        <figure class="profile-figure">
+            <img src="images/jordan.jpg" alt="Photo of Jordan" height="200" width="300" class="profile-pic rounded">
+            <figcaption class="tagline">Aspiring Web Developer & Lifelong Learner</figcaption>
+        </figure>
+        <!-- Hamburger menu for mobile navigation system -->
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- nav-main uses .rounded for rubric compliance -->
+        <nav id="main-nav" class="nav-main rounded">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-    <h1>Welcome to My Website</h1>
+    <main class="main-grid">
+        <section>
+            <h1>Welcome to My Website</h1>
+            <button onclick="greetUser()">Greet Me</button>
+        </section>
+        <aside class="side-info">
+            <p>Check out my latest projects and contact me for collaboration!</p>
+        </aside>
+    </main>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
-    </nav>
-    <p>This is a sample website.</p>
-</body>
-</html>
+    <nav>
+        <footer>
+            <p>
+                Contact me: 
+                <a href="mailto:jordan_peebles@ranken.edu">jordan_peebles@ranken.edu</a>
+            </p>
+        </footer>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
